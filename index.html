@@ -88,9 +88,9 @@
     </style>
 </head>
 <body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
-<header class="sticky top-[10px] z-50 bg-[#fcf4f6]/80 botanical-blur border-b border-primary/5">
+<header class="sticky top-0 z-50 bg-[#fcf4f6]/80 botanical-blur border-b border-primary/5">
 <nav class="flex justify-between items-center p-[10px] max-w-screen-2xl mx-auto">
-<a href="index.html" class="text-xl md:text-2xl font-black tracking-tighter text-[#b70049] dark:text-[#ff3d8b] z-50 no-underline">Anamour Natural</a>
+<a href="index.html" class="shrink-0 flex items-center"><img src="logo.webp" alt="Anamour Natural" class="h-10 w-auto"/></a>
 <!-- Desktop Nav -->
 <div class="hidden lg:flex items-center gap-6 xl:gap-8">
 <a class="font-['Plus_Jakarta_Sans'] text-sm tracking-tight font-bold text-[#b70049] border-b-2 border-[#b70049] pb-1 hover:scale-105 transition-transform duration-200" href="kuru-meyve.html">Kuru Meyve</a>
@@ -107,7 +107,7 @@
 <button class="px-2 py-1 text-on-surface-variant hover:text-primary transition-colors">EN</button>
 </div>
 <!-- Mobile Menu Toggle -->
-<button class="lg:hidden flex items-center justify-center w-10 h-10 text-primary z-50" id="mobile-menu-toggle">
+<button class="lg:hidden flex items-center justify-center w-10 h-10 text-primary z-[70]" id="mobile-menu-toggle">
 <span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
 </button>
 <div class="hidden md:flex items-center gap-4 text-[#b70049]">
@@ -116,7 +116,7 @@
 </div>
 </nav>
 <!-- Mobile Menu Overlay -->
-<div class="fixed inset-0 bg-background z-40 flex flex-col items-center justify-center gap-8 transition-transform duration-500 translate-x-full lg:hidden" id="mobile-menu">
+<div class="fixed inset-0 bg-background z-[60] flex flex-col items-center justify-center gap-8 transition-transform duration-500 translate-x-full lg:hidden" id="mobile-menu">
 <a class="text-2xl font-bold text-primary" href="kuru-meyve.html">Kuru Meyve</a>
 <a class="text-2xl font-bold text-stone-600" href="kuru-meyve-unu.html">Kuru Meyve Unu</a>
 <a class="text-2xl font-bold text-stone-600" href="taze-meyve.html">Taze Meyve</a>
