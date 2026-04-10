@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Toptan Satış | Anamour Natural</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#665c00",
+                    "on-secondary-fixed": "#00480f",
+                    "on-secondary": "#d1ffc8",
+                    "on-background": "#312e2f",
+                    "surface-tint": "#b70049",
+                    "surface-container-high": "#e9e0e3",
+                    "surface-variant": "#e3dbdd",
+                    "on-tertiary-container": "#5f5600",
+                    "secondary-container": "#91f78e",
+                    "tertiary-dim": "#595000",
+                    "outline-variant": "#b2abad",
+                    "outline": "#7b7577",
+                    "surface": "#fcf4f6",
+                    "surface-container-highest": "#e3dbdd",
+                    "error": "#b31b25",
+                    "background": "#fcf4f6",
+                    "surface-dim": "#dbd2d5",
+                    "primary-container": "#ff7290",
+                    "on-error-container": "#570008",
+                    "error-dim": "#9f0519",
+                    "surface-bright": "#fcf4f6",
+                    "on-primary": "#ffeff0",
+                    "tertiary-fixed": "#ffeb3b",
+                    "inverse-primary": "#ff4e7c",
+                    "on-primary-fixed-variant": "#5f0022",
+                    "primary-fixed-dim": "#ff5580",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#ff7290",
+                    "tertiary-fixed-dim": "#f0dc2b",
+                    "on-secondary-fixed-variant": "#00691a",
+                    "on-primary-fixed": "#000000",
+                    "secondary-fixed-dim": "#83e881",
+                    "on-primary-container": "#4d001a",
+                    "tertiary-container": "#ffeb3b",
+                    "inverse-on-surface": "#a19b9d",
+                    "on-secondary-container": "#005e17",
+                    "on-surface-variant": "#5f5a5c",
+                    "on-tertiary": "#fff4b0",
+                    "surface-container-low": "#f7eff1",
+                    "surface-container": "#eee6e8",
+                    "on-error": "#ffefee",
+                    "on-surface": "#312e2f",
+                    "on-tertiary-fixed-variant": "#6a6000",
+                    "secondary-dim": "#005d16",
+                    "on-tertiary-fixed": "#4b4400",
+                    "inverse-surface": "#100d0f",
+                    "secondary-fixed": "#91f78e",
+                    "primary-dim": "#a1003f",
+                    "secondary": "#006b1b",
+                    "primary": "#b70049"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        /* Mobile Menu Animation */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-100%);
+        }
+        #mobile-menu.active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[#fcf4f6]/95 backdrop-blur-md transition-all duration-300">
+<div class="flex justify-between items-center px-4 md:px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-xl md:text-2xl font-black tracking-tighter text-[#b70049] dark:text-[#ff3d8b]">
+            Anamour Natural
+        </div>
+<!-- Desktop Nav -->
+<div class="hidden lg:flex items-center space-x-6 xl:space-x-8 font-['Plus_Jakarta_Sans'] text-sm tracking-tight font-medium">
+<a class="text-stone-600 hover:text-[#b70049] transition-transform duration-200 hover:scale-105" href="kuru-meyve.html">Kuru Meyve</a>
+<a class="text-stone-600 hover:text-[#b70049] transition-transform duration-200 hover:scale-105" href="kuru-meyve-unu.html">Kuru Meyve Unu</a>
+<a class="text-stone-600 hover:text-[#b70049] transition-transform duration-200 hover:scale-105" href="taze-meyve.html">Taze Meyve</a>
+<a class="text-stone-600 hover:text-[#b70049] transition-transform duration-200 hover:scale-105" href="zeytinyagi.html">Zeytinyağı</a>
+<a class="text-stone-600 hover:text-[#b70049] transition-transform duration-200 hover:scale-105" href="receller.html">Reçeller</a>
+<a class="text-[#b70049] font-bold border-b-2 border-[#b70049] pb-1 transition-transform duration-200 hover:scale-105" href="toptan-satis.html">Toptan Satış</a>
+</div>
+<div class="flex items-center space-x-4 text-[#b70049]">
+<!-- Language Switcher -->
+<div class="flex items-center gap-1 font-bold text-xs uppercase tracking-widest border border-primary/20 rounded-full px-3 py-1.5">
+<span class="cursor-pointer text-primary">TR</span>
+<span class="text-primary/20">|</span>
+<a class="cursor-pointer text-stone-400 hover:text-primary transition-colors" href="#">EN</a>
+</div>
+<span class="material-symbols-outlined cursor-pointer hover:scale-110 transition-transform">search</span>
+<!-- Mobile Toggle -->
+<button class="lg:hidden flex items-center" onclick="document.getElementById('mobile-menu').classList.toggle('active')">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu Overlay -->
+<div class="lg:hidden absolute top-full left-0 right-0 bg-surface shadow-2xl border-t border-primary/5 p-6 space-y-4" id="mobile-menu">
+<a class="block py-2 text-stone-600 font-medium" href="kuru-meyve.html">Kuru Meyve</a>
+<a class="block py-2 text-stone-600 font-medium" href="kuru-meyve-unu.html">Kuru Meyve Unu</a>
+<a class="block py-2 text-stone-600 font-medium" href="taze-meyve.html">Taze Meyve</a>
+<a class="block py-2 text-stone-600 font-medium" href="zeytinyagi.html">Zeytinyağı</a>
+<a class="block py-2 text-stone-600 font-medium" href="receller.html">Reçeller</a>
+<a class="block py-2 text-[#b70049] font-bold" href="toptan-satis.html">Toptan Satış</a>
+</div>
+</nav>
+<main class="pt-20 md:pt-24">
+<!-- Hero Section -->
+<section class="relative px-6 lg:px-12 py-12 lg:py-24 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+<div class="flex-1 z-10 text-center lg:text-left">
+<span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-primary bg-primary-container/20 rounded-full uppercase">B2B Çözümleri</span>
+<h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tighter text-on-surface leading-[1.1] mb-6 md:mb-8">Doğanın Gücünü <br/><span class="text-primary italic">İşletmenize Taşıyın</span></h1>
+<p class="text-base md:text-lg text-on-surface-variant max-w-xl mx-auto lg:mx-0 mb-8 md:mb-10 leading-relaxed">Anamour Natural'ın premium kurutulmuş meyve, un ve organik zeytinyağı seçkisini işletmeniz için toptan avantajlarla keşfedin. Oteller, restoranlar ve gurme marketler için özel paketleme seçenekleri sunuyoruz.</p>
+<div class="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4">
+<a class="px-8 py-4 bg-primary text-on-primary rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-xl shadow-primary/20" href="#contact-form">Hemen Başvurun</a>
+<a class="px-8 py-4 bg-surface-container-highest text-primary rounded-full font-bold text-lg hover:scale-105 active:scale-95 transition-all" href="#partnership-info">Süreç Nasıl İşler?</a>
+</div>
+</div>
+<div class="flex-1 relative w-full max-w-2xl lg:max-w-none">
+<div class="w-full aspect-square md:aspect-[4/3] lg:aspect-square rounded-xl overflow-hidden shadow-2xl md:rotate-3 scale-95 hover:rotate-0 hover:scale-100 transition-all duration-700">
+<img class="w-full h-full object-cover" data-alt="high-end display of dried organic fruits and olive oil bottles in a rustic professional kitchen setting with warm morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi_BjtEWPk-ueQNei135l8oFhvfiZcGg7VdXgOmXJSA8BGgTUMYEzfR2BbVQvIYPdcbtIoUc8-4G7f5rilB9gkO22Vpdq8KbCi0BKX5tz5ns-J2JOAP7ZiA1hcQAJFV6qqE48dsPWo_Xa5_YaD8mVJ4AKn4641nNd6J6tNUtPui_6SFG3FSoqZm5LclRNA1PgFm9yGmmlRYE2RXn6QILoFzF-2AlR5seudtWiXlYjXxccVaUJqwviQg6d7i_pGfn2pTatnux3Prc6e"/>
+</div>
+<div class="absolute -bottom-8 -left-8 w-48 md:w-64 aspect-square rounded-lg overflow-hidden shadow-xl -rotate-6 hidden md:block border-8 border-surface">
+<img class="w-full h-full object-cover" data-alt="close-up of vibrant dried dragon fruit slices and tropical botanicals with editorial style lighting and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE_2TwAGDHgVK-O3EmLcUxNHn-ijFktm8ZSvvVHScjQdPfg2Um2jMj4LjH-UIcuK7a9JtgtjJNKbM7u0S6b-TF42k0_YO_pr5ryZsxOwfHy8s6MDX6SUstpSstNxG3R6xZT0_6KlUJanMGdniJ3uEPq52_mPBH5REvcGRo61KJd34kUedBGYpycJMGFaS0XO9Vk1Q0RVxHRuhHq5f3JVQH-85a9_ERm5sw0oLqiGQ0AaNYFYIvG0QlZJnXbqiMmwBuz6-fHKY8L5zr"/>
+</div>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute top-20 right-0 w-64 md:w-96 h-64 md:h-96 bg-secondary/5 rounded-full blur-3xl -z-10"></div>
+<div class="absolute bottom-0 left-20 w-48 md:w-80 h-48 md:h-80 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+</section>
+<!-- Partnership Opportunities -->
+<section class="px-6 lg:px-12 py-16 lg:py-24 bg-surface-container-low" id="partnership-info">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-12 md:mb-16 text-center max-w-2xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Neden Bizimle Çalışmalısınız?</h2>
+<p class="text-on-surface-variant">Anamour Natural olarak sadece ürün değil, sürdürülebilir bir iş ortaklığı sunuyoruz.</p>
+</div>
+<!-- Grid System responsive for Tablet/Mobile -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Premium Quality - Spans columns on tablet and desktop -->
+<div class="md:col-span-2 row-span-1 lg:row-span-2 bg-surface-container-lowest rounded-lg p-8 lg:p-10 flex flex-col justify-between hover:bg-primary group transition-all duration-500 min-h-[400px]">
+<div>
+<div class="w-16 h-16 bg-primary-container/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-white/20">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:text-white">verified</span>
+</div>
+<h3 class="text-2xl md:text-3xl font-bold mb-4 group-hover:text-white">Premium Kalite Standartları</h3>
+<p class="text-on-surface-variant text-base md:text-lg group-hover:text-white/80">Ürünlerimiz, zirai ilaç kalıntısı içermeyen, geleneksel yöntemlerle ve modern tesislerde paketlenen en seçkin mahsullerden oluşur.</p>
+</div>
+<div class="pt-6 group-hover:text-white flex items-center gap-2 font-bold text-sm">
+                        Tüm sertifikalarımız için iletişime geçin <span class="material-symbols-outlined">arrow_right_alt</span>
+</div>
+</div>
+<div class="bg-secondary text-on-secondary rounded-lg p-8 flex flex-col justify-end relative overflow-hidden h-[240px]">
+<div class="absolute top-4 right-4 opacity-20">
+<span class="material-symbols-outlined text-6xl">eco</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Sürdürülebilir Tarım</h3>
+<p class="text-sm opacity-80">Doğaya saygılı üretim süreçleri.</p>
+</div>
+<div class="bg-tertiary-container text-on-tertiary-container rounded-lg p-8 flex flex-col justify-end relative overflow-hidden h-[240px]">
+<div class="absolute top-4 right-4 opacity-20">
+<span class="material-symbols-outlined text-6xl">inventory_2</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Esnek Paketleme</h3>
+<p class="text-sm opacity-80">Markanıza özel private label imkanları.</p>
+</div>
+<div class="md:col-span-2 bg-surface-container-highest rounded-lg p-6 md:p-8 flex flex-col sm:flex-row items-center gap-6 group hover:scale-[1.01] transition-transform">
+<div class="w-24 md:w-32 h-24 md:h-32 rounded-full overflow-hidden shrink-0 border-4 border-white shadow-lg">
+<img class="w-full h-full object-cover" data-alt="professional delivery logistics worker checking stock with a digital tablet in a bright modern warehouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChUKz3ZpQkvMdn6qH6BXBIvmi61nLE75K5WUzSo7JWmypU6IDrR1vEfo-0ezJI0hJdoy7ZMegFztftbX11c6nSgfemlLDHL3RuEQ7Snsg0tJktdfapgZ7xn7gcC74skJZ8bmRcRkCdLWXc8PNSoGEWoF6bv-d7B1UrBRcHIxnPqfFH6_MjtJ7vfoOkIhBUE319FKtLz3qgPkA3ilT-Kms3phSCzH46Q5eAvhwXW_0AircHA57EWWB40MS1gJSe1X-7Whvkspv09Fu-"/>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2 text-center sm:text-left">Hızlı Lojistik &amp; Stok</h3>
+<p class="text-on-surface-variant text-sm text-center sm:text-left">Kesintisiz tedarik zincirimiz ve güçlü stok yapımızla işletmenizin taleplerine anında cevap veriyoruz.</p>
+</div>
+</div>
+<div class="md:col-span-2 bg-white rounded-lg p-8 border border-outline-variant/15 flex flex-col justify-center">
+<div class="flex items-center gap-4 mb-4">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full bg-primary-container border-2 border-white"></div>
+<div class="w-10 h-10 rounded-full bg-secondary-container border-2 border-white"></div>
+<div class="w-10 h-10 rounded-full bg-tertiary-container border-2 border-white"></div>
+</div>
+<span class="text-sm font-bold text-on-surface-variant">500+ İş Ortağı</span>
+</div>
+<h3 class="text-xl font-bold">Güvenilir Partner Ağı</h3>
+<p class="text-on-surface-variant text-sm">Türkiye'nin en seçkin restoran ve otel zincirlerinin tercihiyiz.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Form Section -->
+<section class="px-6 lg:px-12 py-16 lg:py-24 overflow-hidden relative" id="contact-form">
+<div class="max-w-screen-2xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16">
+<div class="lg:w-1/3">
+<h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-6 md:mb-8">İş Ortaklığı Formu</h2>
+<p class="text-on-surface-variant mb-8 md:mb-10 leading-relaxed">Ekibimiz, başvurunuzu inceledikten sonra 24 saat içinde sizinle iletişime geçerek işletmenize özel fiyat listesini paylaşacaktır.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-on-surface-variant">E-posta</p>
+<p class="font-bold text-sm md:text-base">b2b@anamournatural.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-on-surface-variant">Telefon</p>
+<p class="font-bold text-sm md:text-base">+90 (212) 555 00 00</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-2/3">
+<div class="glass-card p-6 md:p-8 lg:p-12 rounded-xl shadow-2xl border border-white/20">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+<div class="space-y-2">
+<label class="text-sm font-bold ml-2">İsim Soyisim</label>
+<input class="w-full px-6 py-4 rounded-md bg-surface-container-highest border-none focus:ring-2 focus:ring-primary transition-all text-sm" placeholder="Adınız" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold ml-2">Şirket Adı</label>
+<input class="w-full px-6 py-4 rounded-md bg-surface-container-highest border-none focus:ring-2 focus:ring-primary transition-all text-sm" placeholder="Şirketiniz" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold ml-2">E-posta Adresi</label>
+<input class="w-full px-6 py-4 rounded-md bg-surface-container-highest border-none focus:ring-2 focus:ring-primary transition-all text-sm" placeholder="kurumsal@eposta.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold ml-2">Telefon</label>
+<input class="w-full px-6 py-4 rounded-md bg-surface-container-highest border-none focus:ring-2 focus:ring-primary transition-all text-sm" placeholder="+90" type="tel"/>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="text-sm font-bold ml-2">İşletme Türü</label>
+<div class="flex flex-wrap gap-2 md:gap-3">
+<button class="px-4 md:px-6 py-2 rounded-full border border-primary text-primary text-xs md:text-sm font-medium hover:bg-primary hover:text-white transition-all whitespace-nowrap" type="button">Restoran / Kafe</button>
+<button class="px-4 md:px-6 py-2 rounded-full border border-primary text-primary text-xs md:text-sm font-medium hover:bg-primary hover:text-white transition-all whitespace-nowrap" type="button">Otel</button>
+<button class="px-4 md:px-6 py-2 rounded-full border border-primary text-primary text-xs md:text-sm font-medium hover:bg-primary hover:text-white transition-all whitespace-nowrap" type="button">Gurme Market</button>
+<button class="px-4 md:px-6 py-2 rounded-full border border-primary text-primary text-xs md:text-sm font-medium hover:bg-primary hover:text-white transition-all whitespace-nowrap" type="button">Diğer</button>
+</div>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="text-sm font-bold ml-2">Mesajınız</label>
+<textarea class="w-full px-6 py-4 rounded-md bg-surface-container-highest border-none focus:ring-2 focus:ring-primary transition-all text-sm" placeholder="Taleplerinizi buraya yazabilirsiniz..." rows="4"></textarea>
+</div>
+<div class="md:col-span-2">
+<button class="w-full md:w-auto px-12 py-4 bg-primary text-on-primary rounded-full font-bold text-lg hover:shadow-xl hover:shadow-primary/30 transition-all flex items-center justify-center gap-2" type="submit">
+                                Gönder <span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Absolute decorative image -->
+<div class="absolute -right-10 md:-right-20 -bottom-10 md:-bottom-20 w-48 md:w-80 h-48 md:h-80 opacity-10 pointer-events-none">
+<img class="w-full h-full object-contain" data-alt="abstract artistic illustration of botanical leaves and fruit textures with soft pink and green tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9AZM8bTtoFR7c0rgLkSjToBmPZ9EjBwUSf5nZO8uBba5RrZJZOBSwxFNeGSDT8XfHeKcQIcSuptGGM1o8HJIojbY_mYBqSr-7GctEmK0QSkIsKgR7phrLutAvjzJYrRWWZL93XdJwyAvI7pJhIap8XR8INsF5g3_l8Sxai_6bSHWubk0VobY8t7ZumEIwttaSQoT6g41IT4FEsvqfhKbOS4oRThCfIsquQxir3jk2cEfjAsJHLXLcNrH7w7wkqha_gp5zmwa05gSC"/>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 py-12 px-6">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col lg:flex-row justify-between items-center gap-10">
+<div class="text-center lg:text-left">
+<div class="text-xl font-bold text-[#b70049] mb-2">Anamour Natural</div>
+<p class="text-stone-500 font-['Plus_Jakarta_Sans'] text-[10px] md:text-xs font-medium uppercase tracking-widest">© 2024 Anamour Natural. Fresh and Organic.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 md:gap-6">
+<a class="font-['Plus_Jakarta_Sans'] text-[10px] md:text-xs font-medium uppercase tracking-widest text-stone-500 hover:text-[#b70049] transition-transform hover:translate-x-1" href="kuru-meyve.html">Kuru Meyve</a>
+<a class="font-['Plus_Jakarta_Sans'] text-[10px] md:text-xs font-medium uppercase tracking-widest text-stone-500 hover:text-[#b70049] transition-transform hover:translate-x-1" href="kuru-meyve-unu.html">Kuru Meyve Unu</a>
+<a class="font-['Plus_Jakarta_Sans'] text-[10px] md:text-xs font-medium uppercase tracking-widest text-stone-500 hover:text-[#b70049] transition-transform hover:translate-x-1" href="taze-meyve.html">Taze Meyve</a>
+<a class="font-['Plus_Jakarta_Sans'] text-[10px] md:text-xs font-medium uppercase tracking-widest text-stone-500 hover:text-[#b70049] transition-transform hover:translate-x-1" href="zeytinyagi.html">Zeytinyağı</a>
+<a class="font-['Plus_Jakarta_Sans'] text-[10px] md:text-xs font-medium uppercase tracking-widest text-[#006b1b]" href="toptan-satis.html">Toptan Satış</a>
+<a class="font-['Plus_Jakarta_Sans'] text-[10px] md:text-xs font-medium uppercase tracking-widest text-stone-500 hover:text-[#b70049] transition-transform hover:translate-x-1" href="siparis-takibi.html">Sipariş Takibi</a>
+</div>
+<div class="flex gap-6 text-stone-400">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">mail</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">phone_in_talk</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

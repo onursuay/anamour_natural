@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#665c00",
+                    "on-secondary-fixed": "#00480f",
+                    "on-secondary": "#d1ffc8",
+                    "on-background": "#312e2f",
+                    "surface-tint": "#b70049",
+                    "surface-container-high": "#e9e0e3",
+                    "surface-variant": "#e3dbdd",
+                    "on-tertiary-container": "#5f5600",
+                    "secondary-container": "#91f78e",
+                    "tertiary-dim": "#595000",
+                    "outline-variant": "#b2abad",
+                    "error-container": "#fb5151",
+                    "outline": "#7b7577",
+                    "surface": "#fcf4f6",
+                    "surface-container-highest": "#e3dbdd",
+                    "error": "#b31b25",
+                    "background": "#fcf4f6",
+                    "surface-dim": "#dbd2d5",
+                    "primary-container": "#ff7290",
+                    "on-error-container": "#570008",
+                    "error-dim": "#9f0519",
+                    "surface-bright": "#fcf4f6",
+                    "on-primary": "#ffeff0",
+                    "tertiary-fixed": "#ffeb3b",
+                    "inverse-primary": "#ff4e7c",
+                    "on-primary-fixed-variant": "#5f0022",
+                    "primary-fixed-dim": "#ff5580",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#ff7290",
+                    "tertiary-fixed-dim": "#f0dc2b",
+                    "on-secondary-fixed-variant": "#00691a",
+                    "on-primary-fixed": "#000000",
+                    "secondary-fixed-dim": "#83e881",
+                    "on-primary-container": "#4d001a",
+                    "tertiary-container": "#ffeb3b",
+                    "inverse-on-surface": "#a19b9d",
+                    "on-secondary-container": "#005e17",
+                    "on-surface-variant": "#5f5a5c",
+                    "on-tertiary": "#fff4b0",
+                    "surface-container-low": "#f7eff1",
+                    "surface-container": "#eee6e8",
+                    "on-error": "#ffefee",
+                    "on-surface": "#312e2f",
+                    "on-tertiary-fixed-variant": "#6a6000",
+                    "secondary-dim": "#005d16",
+                    "on-tertiary-fixed": "#4b4400",
+                    "inverse-surface": "#100d0f",
+                    "secondary-fixed": "#91f78e",
+                    "primary-dim": "#a1003f",
+                    "secondary": "#006b1b",
+                    "primary": "#b70049"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface/80 backdrop-blur-md dark:bg-stone-950/80 flex justify-between items-center px-4 md:px-8 py-4 max-w-screen-2xl mx-auto top-0 sticky z-50">
+<div class="text-xl md:text-2xl font-black tracking-tighter text-primary dark:text-[#ff3d8b]">Anamour Natural</div>
+<!-- Desktop Nav -->
+<div class="hidden lg:flex items-center gap-6">
+<a class="text-sm tracking-tight font-bold border-b-2 border-primary pb-1 text-primary" href="kuru-meyve.html">Kuru Meyve</a>
+<a class="text-sm tracking-tight font-medium text-on-surface-variant hover:text-primary transition-colors" href="kuru-meyve-unu.html">Kuru Meyve Unu</a>
+<a class="text-sm tracking-tight font-medium text-on-surface-variant hover:text-primary transition-colors" href="taze-meyve.html">Taze Meyve</a>
+<a class="text-sm tracking-tight font-medium text-on-surface-variant hover:text-primary transition-colors" href="zeytinyagi.html">Zeytinyağı</a>
+<a class="text-sm tracking-tight font-medium text-on-surface-variant hover:text-primary transition-colors" href="receller.html">Reçeller</a>
+<a class="text-sm tracking-tight font-medium text-on-surface-variant hover:text-primary transition-colors" href="toptan-satis.html">Toptan Satış</a>
+</div>
+<div class="flex items-center gap-3 md:gap-4">
+<!-- Language Switcher -->
+<div class="flex items-center bg-surface-container rounded-full px-1 py-1">
+<button class="px-3 py-1 text-xs font-bold rounded-full bg-primary text-on-primary">TR</button>
+<button class="px-3 py-1 text-xs font-bold rounded-full text-on-surface-variant hover:text-primary transition-colors">EN</button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="lg:hidden p-2 text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="max-w-screen-2xl mx-auto px-4 md:px-8 py-8 md:py-12 overflow-x-hidden">
+<!-- Hero Section -->
+<header class="relative mb-16 md:mb-24 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+<div class="w-full lg:w-1/2 z-10 text-center lg:text-left order-2 lg:order-1">
+<span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Botanical Pulse</span>
+<h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-on-surface tracking-tighter leading-tight lg:leading-none mb-6">
+                    Güneşin <span class="text-primary italic">Özü</span>,<br/>Meyvenin Ruhu.
+                </h1>
+<p class="text-on-surface-variant text-base md:text-lg max-w-md mx-auto lg:mx-0 leading-relaxed mb-8">
+                    Anamour Natural olarak, meyvelerimizi en olgun oldukları anda dalından topluyor ve geleneksel yöntemlerle modern teknolojiyi birleştirerek kurutuyoruz.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-lg shadow-primary/20">Süreci Keşfedin</button>
+<button class="bg-surface-container-highest text-primary px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform">Katalog</button>
+</div>
+</div>
+<div class="w-full lg:w-1/2 relative order-1 lg:order-2">
+<div class="absolute inset-0 bg-primary/5 rounded-xl -rotate-2 transform scale-105"></div>
+<img class="rounded-xl shadow-2xl relative z-10 w-full h-[300px] sm:h-[450px] lg:h-[600px] object-cover" data-alt="vibrant layout of sliced dried dragon fruit, oranges and bananas on a rustic wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL-6ULPT2yVpQc8L0tALap_hsnhbtmRChWJCN4NLBgup1D4p5M5tZF-F8BvC3r987hm05WuQFOL2ktAWFTNuGpVkelnd3kQgpr0DrBuddTKaBcTvC4dxeuWLz5WYtODGpeDr6yPcy6RrsGQ5o6F_XD_mteyILsRqhiPdcOqHWFrPpdVrjAKi87SRkH7SBkcCoq94mHVJRn8wlHvxlVQArkSMkfauCzqQTdZG6YpSaBkLhT3rvleuE3XwX_mjLmagTBosOtbgxOveFm"/>
+<div class="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 bg-secondary text-on-secondary p-4 md:p-8 rounded-lg shadow-xl z-20">
+<p class="text-xl md:text-3xl font-black italic">%100 Doğal</p>
+<p class="text-[10px] md:text-sm opacity-80 uppercase tracking-widest">Katkısız ve Şekersiz</p>
+</div>
+</div>
+</header>
+<!-- Process Section -->
+<section class="mb-20 md:mb-32 bg-surface-container-low rounded-xl p-6 md:p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 md:p-24 opacity-5 md:opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-9xl md:text-[20rem] text-secondary">eco</span>
+</div>
+<div class="relative z-10">
+<h2 class="text-3xl md:text-4xl font-extrabold tracking-tighter mb-8 md:mb-12">Kurutma Sanatımız</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-4">
+<div class="w-10 h-10 md:w-12 md:h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-lg md:text-xl">1</div>
+<h3 class="text-xl font-bold">Özenle Seçim</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm md:text-base">Sadece en canlı renklere ve en yüksek besin değerine sahip meyveleri, yerel bahçelerimizden tek tek elimizle seçiyoruz.</p>
+</div>
+<div class="space-y-4">
+<div class="w-10 h-10 md:w-12 md:h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-lg md:text-xl">2</div>
+<h3 class="text-xl font-bold">Düşük Isı Kurutma</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm md:text-base">Meyveleri 45 dereceyi aşmayan sıcaklıklarda, vitamin ve minerallerini hapsetmek için uzun sürede kurutuyoruz.</p>
+</div>
+<div class="space-y-4">
+<div class="w-10 h-10 md:w-12 md:h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-lg md:text-xl">3</div>
+<h3 class="text-xl font-bold">Sıfır Katkı Maddesi</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm md:text-base">Hiçbir koruyucu, kükürt veya ilave şeker kullanmıyoruz. Sadece meyvenin kendi doğal lezzeti.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Bento Grid -->
+<section class="mb-20 md:mb-32">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-8 md:mb-12">
+<div>
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter mb-2">Seçkin Koleksiyon</h2>
+<p class="text-on-surface-variant text-base md:text-lg">Mevsimin en taze lezzetleri, şimdi her an yanınızda.</p>
+</div>
+<div class="hidden md:flex gap-2">
+<button class="w-12 h-12 rounded-full border border-outline/20 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline/20 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8">
+<!-- Featured: Pitaya -->
+<div class="md:col-span-12 lg:col-span-7 bg-surface-container-lowest rounded-lg overflow-hidden group relative flex flex-col shadow-sm border border-outline-variant/10">
+<div class="h-64 sm:h-96 lg:h-[500px] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="vibrant pink dried dragon fruit slices" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVCqXxqHCbuStkxY-rREgEHiAGxqBqvgT8S3AnoODyY_17YdrRw2QqGMbzJsE6sWrjFQFMCdEgTJv9_kdJas7YLr44kQa_UqDvI97O15K_D1h7Swfynjs-FrTTjgmKKW84PuNmkQPF8ZJK05gPcdPWNP1GmdHsIbX29a-x6KFvIRwQ_OKrO5lWbeMFA9ClInv5LFuHoisfJ7cl0m3Z0n0dnPrl3afNee1hlgilQUD9xLd9pYOMlaQWcge56gN8Zy8S1cI2wbAbLs3X"/>
+</div>
+<div class="p-6 md:p-8 flex-grow">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-widest mb-2 inline-block">Favori</span>
+<h3 class="text-2xl md:text-3xl font-extrabold tracking-tight">Kurutulmuş Pitaya</h3>
+</div>
+<span class="material-symbols-outlined text-primary text-3xl md:text-4xl" data-weight="fill">energy_savings_leaf</span>
+</div>
+<p class="text-on-surface-variant text-sm md:text-base leading-relaxed mb-6">Antioksidan deposu, tropikal bir mucize. Magnezyum ve lif açısından zengin yapısıyla enerjinizi doğal yolla yükseltir.</p>
+<div class="flex flex-wrap gap-2 md:gap-4">
+<span class="text-[10px] md:text-xs font-bold py-1.5 md:py-2 px-3 md:px-4 rounded-full bg-surface-container-highest text-on-surface-variant uppercase tracking-tighter">Yüksek Lif</span>
+<span class="text-[10px] md:text-xs font-bold py-1.5 md:py-2 px-3 md:px-4 rounded-full bg-surface-container-highest text-on-surface-variant uppercase tracking-tighter">C Vitamini</span>
+</div>
+</div>
+</div>
+<!-- Secondary Grid -->
+<div class="md:col-span-12 lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 lg:gap-8">
+<!-- Orange -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden group flex flex-col sm:flex-row lg:flex-row shadow-sm border border-outline-variant/10">
+<div class="w-full sm:w-1/3 lg:w-1/3 h-48 sm:h-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="crystalline dried orange slices" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9BN3ZozQhcMk1WkJwgyjIdpBi8PndtLtlMOSsJCjskvGPDhqFN8d9uCdQAx0nZW23F2K6wSgTtuBgy0x_lmsMCExsgqPrUJEH-vBxwJx0zZLiEMKnYHoF1XwXb2Ktkf1WXykgf69dZJlCQvzZc-sgMBYoSJv9wmFY88yMyAcHMoiLMSXCdHdZqnrVfNG0HNmPABTN9XfZpfyOoAH4Ls_BWX6VU5xcfOZtKwijep-0_qxgVYActRnODvdQMiirqhq-RizatFZgGNMf"/>
+</div>
+<div class="w-full sm:w-2/3 lg:w-2/3 p-6 flex flex-col justify-center">
+<h3 class="text-xl font-bold mb-2">Kurutulmuş Portakal</h3>
+<p class="text-sm text-on-surface-variant mb-4 leading-snug">Çaylarınızı tatlandırmak veya tek başına atıştırmak için C vitamini patlaması.</p>
+<span class="text-primary text-sm font-bold flex items-center gap-1 cursor-pointer">Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</div>
+</div>
+<!-- Banana -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden group flex flex-col sm:flex-row lg:flex-row shadow-sm border border-outline-variant/10">
+<div class="w-full sm:w-1/3 lg:w-1/3 h-48 sm:h-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="crispy golden dried banana chips" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV1IIILIWgFGVp_TrRLV9hJfvyUcvAz1BYO1UDRPYk8DZVFrtj522IoqDe5wuFXgPtH0waHYEdWRu1CPap4QEkYdicxA3nhNR5J0Ht_aZrFarrBK29N8pJlqkc7Ov46KkZlQSZ3SGMuRivMNz401rHe_xoZ57uPaCIZNwDIFGCKKBeerz50oVYXMG0_5yaibjtYNppLowesd7BBYmWaomQAKe9P-MzjBm9YVC414j_SMxZlMwuh9qsjbOAiGUayiFR1IzO1xuYO6UP"/>
+</div>
+<div class="w-full sm:w-2/3 lg:w-2/3 p-6 flex flex-col justify-center">
+<h3 class="text-xl font-bold mb-2">Kurutulmuş Muz</h3>
+<p class="text-sm text-on-surface-variant mb-4 leading-snug">Potasyum kaynağı, çıtır ve tatlı. Spor öncesi için mükemmel doğal karbonhidrat.</p>
+<span class="text-primary text-sm font-bold flex items-center gap-1 cursor-pointer">Detayları Gör <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="relative rounded-xl overflow-hidden py-16 md:py-24 px-6 md:px-12 text-center">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="citrus orchard at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApzyjqnzpxZeih6ROECwbB_r6zn2TVhLE_jtFy1kk3MyJ8uk7Ee3ab8Ka4uaNW05g3suD5pkknePZtJy9TgekIgI7FZydV-b3dgJcLWVtzGgoyp9tg6qVpXtRMRNhn3DSn4MId1r3VckYsqc-ohO3gEYaCpvNa3Aw0wUXaqlPA9joV_-_go2ycpPnphmsRkmz7QEf271TZVrMWcymcVtBRPga_zq_w6Cx1OLd8w7WaZwvC2xwpVKrZd76frZP2pL2cg2Bt1dU50ehC"/>
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-sm"></div>
+</div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="text-3xl md:text-5xl font-black text-on-primary tracking-tighter mb-6">Doğallığı Keşfetmeye Hazır mısınız?</h2>
+<p class="text-on-primary/90 text-base md:text-lg mb-8 md:10 leading-relaxed">
+                    Üretim süreçlerimiz ve toplu sipariş imkanlarımız hakkında detaylı bilgi almak için bizimle iletişime geçin.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-surface-container-lowest text-primary px-10 py-4 rounded-full font-bold shadow-2xl hover:bg-white transition-colors w-full sm:w-auto">Bize Ulaşın</button>
+<button class="border-2 border-white/50 text-white px-10 py-4 rounded-full font-bold hover:bg-white/10 transition-colors w-full sm:w-auto">Kataloğu İndir (PDF)</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 py-12 px-4 md:px-8">
+<div class="max-w-screen-2xl mx-auto flex flex-col gap-12">
+<div class="flex flex-col md:flex-row justify-between items-center border-t border-black/5 pt-12 gap-8">
+<div class="text-center md:text-left">
+<div class="text-lg font-bold text-primary mb-2 uppercase tracking-tighter">Anamour Natural</div>
+<p class="text-stone-500 text-[10px] md:text-xs font-['Plus_Jakarta_Sans'] uppercase tracking-widest">© 2024 Anamour Natural. Fresh and Organic.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 md:gap-6">
+<a class="text-[10px] md:text-xs font-medium uppercase tracking-widest text-stone-500 hover:text-primary transition-colors" href="kuru-meyve.html">Kuru Meyve</a>
+<a class="text-[10px] md:text-xs font-medium uppercase tracking-widest text-stone-500 hover:text-primary transition-colors" href="kuru-meyve-unu.html">Kuru Meyve Unu</a>
+<a class="text-[10px] md:text-xs font-medium uppercase tracking-widest text-stone-500 hover:text-primary transition-colors" href="taze-meyve.html">Taze Meyve</a>
+<a class="text-[10px] md:text-xs font-medium uppercase tracking-widest text-stone-500 hover:text-primary transition-colors" href="zeytinyagi.html">Zeytinyağı</a>
+<a class="text-[10px] md:text-xs font-medium uppercase tracking-widest text-stone-500 hover:text-primary transition-colors" href="receller.html">Reçeller</a>
+<a class="text-[10px] md:text-xs font-medium uppercase tracking-widest text-stone-500 hover:text-primary transition-colors" href="toptan-satis.html">Toptan Satış</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-stone-400 hover:text-primary cursor-pointer transition-colors">social_leaderboard</span>
+<span class="material-symbols-outlined text-stone-400 hover:text-primary cursor-pointer transition-colors">camera</span>
+<span class="material-symbols-outlined text-stone-400 hover:text-primary cursor-pointer transition-colors">alternate_email</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

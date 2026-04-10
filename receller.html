@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#665c00",
+                    "on-secondary-fixed": "#00480f",
+                    "on-secondary": "#d1ffc8",
+                    "on-background": "#312e2f",
+                    "surface-tint": "#b70049",
+                    "surface-container-high": "#e9e0e3",
+                    "surface-variant": "#e3dbdd",
+                    "on-tertiary-container": "#5f5600",
+                    "secondary-container": "#91f78e",
+                    "tertiary-dim": "#595000",
+                    "outline-variant": "#b2abad",
+                    "outline": "#7b7577",
+                    "surface": "#fcf4f6",
+                    "surface-container-highest": "#e3dbdd",
+                    "error": "#b31b25",
+                    "background": "#fcf4f6",
+                    "surface-dim": "#dbd2d5",
+                    "primary-container": "#ff7290",
+                    "on-error-container": "#570008",
+                    "error-dim": "#9f0519",
+                    "surface-bright": "#fcf4f6",
+                    "on-primary": "#ffeff0",
+                    "tertiary-fixed": "#ffeb3b",
+                    "inverse-primary": "#ff4e7c",
+                    "on-primary-fixed-variant": "#5f0022",
+                    "primary-fixed-dim": "#ff5580",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#ff7290",
+                    "tertiary-fixed-dim": "#f0dc2b",
+                    "on-secondary-fixed-variant": "#00691a",
+                    "on-primary-fixed": "#000000",
+                    "secondary-fixed-dim": "#83e881",
+                    "on-primary-container": "#4d001a",
+                    "tertiary-container": "#ffeb3b",
+                    "inverse-on-surface": "#a19b9d",
+                    "on-secondary-container": "#005e17",
+                    "on-surface-variant": "#5f5a5c",
+                    "on-tertiary": "#fff4b0",
+                    "surface-container-low": "#f7eff1",
+                    "surface-container": "#eee6e8",
+                    "on-error": "#ffefee",
+                    "on-surface": "#312e2f",
+                    "on-tertiary-fixed-variant": "#6a6000",
+                    "secondary-dim": "#005d16",
+                    "on-tertiary-fixed": "#4b4400",
+                    "inverse-surface": "#100d0f",
+                    "secondary-fixed": "#91f78e",
+                    "primary-dim": "#a1003f",
+                    "secondary": "#006b1b",
+                    "primary": "#b70049"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .botanical-shadow {
+            box-shadow: 0 32px 64px -12px rgba(183, 0, 73, 0.08);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        @media (max-width: 1024px) {
+            .mobile-menu-open {
+                overflow: hidden;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="bg-[#fcf4f6]/95 backdrop-blur-md fixed top-0 w-full z-[100] border-b border-primary/5">
+<div class="flex justify-between items-center px-4 md:px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-xl md:text-2xl font-black tracking-tighter text-[#b70049] shrink-0">
+                Anamour Natural
+            </div>
+<div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+<a class="text-sm tracking-tight font-medium text-stone-600 hover:text-[#b70049] transition-colors" href="kuru-meyve.html">Kuru Meyve</a>
+<a class="text-sm tracking-tight font-medium text-stone-600 hover:text-[#b70049] transition-colors" href="kuru-meyve-unu.html">Kuru Meyve Unu</a>
+<a class="text-sm tracking-tight font-medium text-stone-600 hover:text-[#b70049] transition-colors" href="taze-meyve.html">Taze Meyve</a>
+<a class="text-sm tracking-tight font-medium text-stone-600 hover:text-[#b70049] transition-colors" href="zeytinyagi.html">Zeytinyağı</a>
+<a class="text-sm tracking-tight font-bold text-[#b70049] border-b-2 border-[#b70049] pb-1" href="receller.html">Reçeller</a>
+<a class="text-sm tracking-tight font-medium text-stone-600 hover:text-[#b70049] transition-colors" href="toptan-satis.html">Toptan Satış</a>
+</div>
+<div class="flex items-center gap-2 md:gap-4">
+<!-- Language Switcher -->
+<div class="flex items-center bg-surface-container-high rounded-full p-1 text-[10px] font-bold uppercase tracking-wider">
+<button class="px-2 py-1 rounded-full bg-primary text-on-primary">TR</button>
+<button class="px-2 py-1 rounded-full text-on-surface-variant hover:text-primary transition-colors">EN</button>
+</div>
+<!-- Shipping Icon (Non-ecommerce) -->
+<button class="hidden sm:flex material-symbols-outlined text-[#b70049] hover:scale-110 transition-all p-2 bg-primary/5 rounded-full">local_shipping</button>
+<!-- Mobile Menu Button -->
+<button class="lg:hidden material-symbols-outlined text-[#b70049] p-2" onclick="document.getElementById('mobile-nav').classList.toggle('translate-x-full')">menu</button>
+</div>
+</div>
+</nav>
+<!-- Mobile Navigation Overlay -->
+<div class="fixed inset-0 bg-background z-[110] transform translate-x-full transition-transform duration-300 lg:hidden" id="mobile-nav">
+<div class="flex flex-col h-full">
+<div class="flex justify-between items-center p-6 border-b border-primary/10">
+<div class="text-xl font-black tracking-tighter text-[#b70049]">Anamour Natural</div>
+<button class="material-symbols-outlined text-[#b70049]" onclick="document.getElementById('mobile-nav').classList.add('translate-x-full')">close</button>
+</div>
+<div class="flex flex-col p-8 space-y-6 overflow-y-auto">
+<a class="text-2xl font-bold text-stone-800" href="kuru-meyve.html">Kuru Meyve</a>
+<a class="text-2xl font-bold text-stone-800" href="kuru-meyve-unu.html">Kuru Meyve Unu</a>
+<a class="text-2xl font-bold text-stone-800" href="taze-meyve.html">Taze Meyve</a>
+<a class="text-2xl font-bold text-stone-800" href="zeytinyagi.html">Zeytinyağı</a>
+<a class="text-2xl font-bold text-[#b70049]" href="receller.html">Reçeller</a>
+<a class="text-2xl font-bold text-stone-800" href="toptan-satis.html">Toptan Satış</a>
+<div class="pt-8 flex gap-4">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+<span class="text-sm font-medium text-on-surface-variant">Tüm Türkiye'ye Gönderim</span>
+</div>
+</div>
+</div>
+</div>
+<main class="pt-20 md:pt-24 pb-12 md:pb-20">
+<!-- Hero Section -->
+<section class="px-4 md:px-8 max-w-screen-2xl mx-auto mb-12 md:mb-20">
+<div class="relative overflow-hidden bg-surface-container-low rounded-xl md:rounded-2xl p-8 md:p-24 flex flex-col items-center text-center">
+<div class="absolute -top-20 -right-20 w-48 md:w-64 h-48 md:h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-20 -left-20 w-64 md:w-80 h-64 md:h-80 bg-secondary/10 rounded-full blur-3xl"></div>
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-[10px] md:text-xs mb-4 md:mb-6 px-4 py-1 bg-primary/5 rounded-full z-10">Geleneksel Tatlar</span>
+<h1 class="text-4xl md:text-6xl lg:text-8xl font-extrabold tracking-tighter text-on-surface mb-6 md:mb-8 leading-[1] z-10">
+                    Güneşin <span class="text-primary">Kavanozdaki</span> Hali
+                </h1>
+<p class="max-w-2xl text-base md:text-lg text-on-surface-variant font-medium leading-relaxed z-10">
+                    Anamour bahçelerinden özenle toplanan en taze meyveler, hiçbir koruyucu madde içermeden geleneksel yöntemlerle, odun ateşinde ağır ağır pişiriliyor.
+                </p>
+</div>
+</section>
+<!-- Product Bento Grid -->
+<section class="px-4 md:px-8 max-w-screen-2xl mx-auto mb-20 md:mb-32">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
+<!-- Main Featured Jam -->
+<div class="md:col-span-12 lg:col-span-7 bg-surface-container-lowest rounded-lg overflow-hidden flex flex-col sm:flex-row group border border-primary/5">
+<div class="sm:w-1/2 overflow-hidden aspect-video sm:aspect-auto">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close-up of a rustic glass jar of thick strawberry jam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF-BmgVq7-IO2a4KugaOpndSgzn_37ObmPlrJK5KhJSsxalwe7nH3y1rDbhyAElsiP7hCE4rKrL6z9adkEkCUoDJzWlXqePoy7TzYQ1Ec6l7DhozziAp5oeX_XOA8dhrhua-QFt2tMqnUcMYBWS8INMaoKLl2FjkD79OZGvYzaQIpHEqkQF83q1pMpHszy4EdbI5pFZ0yBrAd3I1UxR2sdH38yIfX7zEYwlfP7mymKfhu0ilKU4DLOJTFpLsAUmdOLA6El8LLFQXCy"/>
+</div>
+<div class="sm:w-1/2 p-6 md:p-10 flex flex-col justify-center">
+<span class="text-secondary font-bold text-[10px] tracking-widest uppercase mb-2">En Çok Sevilen</span>
+<h2 class="text-2xl md:text-3xl font-bold mb-4">Geleneksel Çilek Reçeli</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            Dağ çileklerinin eşsiz kokusu ve rengi, sadece pancar şekeri ve limon suyu ile buluştu. Hiçbir katkı maddesi içermez.
+                        </p>
+<ul class="space-y-2 text-xs font-bold text-on-surface/70">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base" data-weight="fill">check_circle</span> %70 Meyve Oranı</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base" data-weight="fill">check_circle</span> Odun Ateşinde Pişirim</li>
+</ul>
+</div>
+</div>
+<!-- Secondary Highlight -->
+<div class="md:col-span-12 lg:col-span-5 bg-primary rounded-lg p-8 md:p-10 text-on-primary flex flex-col justify-between relative overflow-hidden min-h-[300px]">
+<div class="z-10">
+<h2 class="text-3xl md:text-4xl font-black tracking-tight mb-4 leading-tight">Yöresel Tatlar: Turunç Reçeli</h2>
+<p class="text-on-primary/80 font-medium leading-relaxed">
+                            Akdeniz'in karakteristik lezzeti turunç kabukları, el işçiliğiyle rulo yapılarak hazırlanan özel bir tarif.
+                        </p>
+</div>
+<div class="mt-8 flex justify-end z-10">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full border-2 md:border-4 border-on-primary/20 flex items-center justify-center rotate-12">
+<span class="text-[10px] md:text-xs font-black uppercase text-center">%100<br/>Doğal</span>
+</div>
+</div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary-container rounded-full opacity-30 blur-2xl"></div>
+</div>
+<!-- Small Grid Items -->
+<div class="md:col-span-6 lg:col-span-4 bg-surface-container rounded-lg p-6 md:p-8 hover:bg-surface-container-high transition-colors">
+<div class="aspect-square rounded-md overflow-hidden mb-6">
+<img class="w-full h-full object-cover" data-alt="Golden apricot jam being spread on bread" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpMWHDXzgyz1I1uagWfGs6T6IVVjk7ekORTU8mzDkF6g62k7NV-jawj17ComT-MAG9Q-jLi-fco-PKBiXwZbslKlSR4C8vdywc5hBaB7u69jiAZiG7zqHmkmSrPN2pbOfFMgJ58Wheeb99qQWy5dbjiUaLn_Mfe2PLTQ503RM-LYryW6JDAWrT6-0NTwL8dg18FtBRsoaM8cvhMPXUceDlXdxHGY33bKzmddtjoQwvm1Y6bqc1MYSMXzijHwtIlkZa1Vu--g0R6Id7"/>
+</div>
+<h3 class="text-lg md:text-xl font-bold mb-2">Gün Kurusu Kayısı Reçeli</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Güneşte kurutulmuş Malatya kayısılarının karamelize lezzeti.</p>
+</div>
+<div class="md:col-span-6 lg:col-span-4 bg-surface-container rounded-lg p-6 md:p-8 hover:bg-surface-container-high transition-colors">
+<div class="aspect-square rounded-md overflow-hidden mb-6">
+<img class="w-full h-full object-cover" data-alt="Artisanal jar of green fig jam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwG7ySb3c7IyUy9t5tQUuNKcYPK4XcSsMed3lOBxaW8mJbDoSkjXp8NgSiZsdzCjUx1KmeGNBa3SxSI4PZUtevQhQ_3vAgvE9Y0ue5HjCuEnWOgzhhveM9cH3C_8nR10qZ6piUw-AnMeVRnNqzvcSr5k4FfmBu4rQmB59ST2e1nxlG0x1pkKb6cA3HCqPQPEfoUQjIiaLwNm61f2d_a5fZZuUqM3gxR_g5YGeFywFOzPBf7x8a5lVRZPvKYNwpWAoAAum94fW5Ap7_"/>
+</div>
+<h3 class="text-lg md:text-xl font-bold mb-2">Taze İncir Reçeli</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Bütün incirlerin nazikçe korunarak pişirildiği, damakta iz bırakan bir klasik.</p>
+</div>
+<div class="md:col-span-12 lg:col-span-4 bg-surface-container rounded-lg p-6 md:p-8 hover:bg-surface-container-high transition-colors">
+<div class="aspect-square rounded-md overflow-hidden mb-6">
+<img class="w-full h-full object-cover" data-alt="Vibrant red sour cherry jam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPWYbjGT6LkoP0ymPz5B1MZuJc8ZNVmc-ls_3gFSX5BKfDqA0EvDwJJUvCEK0LlPBS_IxYBzv6v0sqsksTbK1gd4sSaoTStFXtyfYMFypIUzk73zA3hF9aga9NgI5IJY1EuXfFVGSom2zv406bhERGUU3XHdS82iKuUp_j_fd0tZH-wvgkVy7VR1DCWiaSxJpG-iAMCJQi4osmHmXdxVYoIJkCquznrWb9zCnvlCANqdeeCt0VmCKKDw5uyuZc2r0WJO9w2xY0aVOx"/>
+</div>
+<h3 class="text-lg md:text-xl font-bold mb-2">Vişne Reçeli</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Mayhoş ve tatlı dengesinin en mükemmel hali, her tanesi ayrı bir lezzet.</p>
+</div>
+</div>
+</section>
+<!-- Philosophy Section -->
+<section class="px-4 md:px-8 max-w-screen-xl mx-auto mb-20 md:mb-32">
+<div class="flex flex-col lg:flex-row items-center gap-8 md:gap-16">
+<div class="w-full lg:w-1/2 relative order-2 lg:order-1">
+<div class="absolute -top-3 -left-3 md:-top-4 md:-left-4 w-full h-full border-2 border-secondary rounded-xl"></div>
+<img class="relative rounded-xl z-10 w-full botanical-shadow aspect-[4/3] object-cover" data-alt="Traditional copper pot over wood fire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrazFqUKObxcZ8TGxupgLnn1JJYW23_dHe5hBYW3oixQL6uqoyddnUKAVy8vJEyWidy7b8ZxxrKMuD7RYFKXaCQCCNdmMoeLiZD8-EoA3dWzOT_6s-T26DD0Fvr8Hb4rvi_Gj7vjCWDgzf77p15iWCridJ6t4j4QQmAC2mrQRBKSuV11wbcCSLvnNaLhIY9zjJnZE3N6GGFSEZ9DVqe0CWCXxncZ17Gxt-bIAuauMvsLpszJNW1GbVOkHigN9YXgjws46c02h4ghiC"/>
+</div>
+<div class="w-full lg:w-1/2 order-1 lg:order-2">
+<span class="text-primary font-bold text-xs md:text-sm tracking-widest uppercase mb-4 block">Sırrımız Ne?</span>
+<h2 class="text-3xl md:text-5xl font-black tracking-tighter mb-6 md:mb-8 leading-tight">Yavaşlık, Sabır ve Sadece <span class="text-secondary">Doğa.</span></h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container text-xl md:text-2xl" data-weight="fill">eco</span>
+</div>
+<div>
+<h4 class="font-bold text-base md:text-lg">Saf İçerik</h4>
+<p class="text-on-surface-variant text-sm">Pektin, glikoz şurubu veya renklendirici yok. Sadece meyve, pancar şekeri ve limon.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-primary-container text-xl md:text-2xl" data-weight="fill">local_fire_department</span>
+</div>
+<div>
+<h4 class="font-bold text-base md:text-lg">Bakır Kazanlar</h4>
+<p class="text-on-surface-variant text-sm">Eşit ısı dağılımı sağlayan geleneksel bakır kazanlarda, meyvenin rengini bozmadan pişiriyoruz.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="px-4 md:px-8 max-w-screen-2xl mx-auto">
+<div class="bg-tertiary-container rounded-xl p-8 md:p-16 lg:p-20 flex flex-col lg:flex-row justify-between items-center relative overflow-hidden gap-8">
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBeMWU3HAShTqItGLVJSJGLx_aOCYVB8qg1itUj2qujSE9NJWXwAFYXvQ8lO9cHQm5pPvSdlLmVcfAPttWSHHMVrm4oxy0oTNtQ_uA2kyjlnTs00DmgTwING2LWiEeUgV8un1jQhMSDN3_JyUEkCgST68vubc7hmWQLXoaPtCGfPhEKIkcNbRMu7Pnq51nLMqApYTUwxxshae2EY4TsocxrjkGCi6dHXt2JnokZGhspsErWEj97tc3ZM0ZVouYYcJj2voy92vfazuDh');"></div>
+<div class="z-10 text-center lg:text-left">
+<h2 class="text-2xl md:text-3xl font-black text-on-tertiary-container mb-2">Sofranıza Doğallık Katın</h2>
+<p class="text-on-tertiary-fixed-variant font-medium text-sm md:text-base">Yeni çıkan mevsimlik reçellerimizden ilk siz haberdar olun.</p>
+</div>
+<div class="z-10 flex flex-col sm:flex-row w-full lg:w-auto gap-3 md:gap-4">
+<input class="bg-surface-container-lowest border-none rounded-full px-6 py-4 w-full lg:w-80 focus:ring-2 focus:ring-primary outline-none text-sm" placeholder="E-posta adresiniz" type="email"/>
+<button class="bg-primary text-on-primary font-bold rounded-full px-8 py-4 hover:scale-105 active:scale-95 transition-all whitespace-nowrap text-sm">Katıl</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 py-12 px-4 md:px-8">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col lg:flex-row justify-between items-center gap-10">
+<div class="text-center lg:text-left">
+<div class="text-xl font-bold text-[#b70049] mb-2 uppercase">Anamour Natural</div>
+<p class="text-[10px] font-medium uppercase tracking-widest text-stone-500">© 2024 Anamour Natural. Fresh and Organic.</p>
+</div>
+<div class="flex flex-wrap justify-center lg:justify-end gap-x-6 gap-y-4 max-w-2xl">
+<a class="text-[10px] font-medium uppercase tracking-widest text-stone-500 hover:text-[#b70049] transition-colors" href="kuru-meyve.html">Kuru Meyve</a>
+<a class="text-[10px] font-medium uppercase tracking-widest text-stone-500 hover:text-[#b70049] transition-colors" href="kuru-meyve-unu.html">Kuru Meyve Unu</a>
+<a class="text-[10px] font-medium uppercase tracking-widest text-stone-500 hover:text-[#b70049] transition-colors" href="taze-meyve.html">Taze Meyve</a>
+<a class="text-[10px] font-medium uppercase tracking-widest text-stone-500 hover:text-[#b70049] transition-colors" href="zeytinyagi.html">Zeytinyağı</a>
+<a class="text-[10px] font-bold uppercase tracking-widest text-[#006b1b]" href="receller.html">Reçeller</a>
+<a class="text-[10px] font-medium uppercase tracking-widest text-stone-500 hover:text-[#b70049] transition-colors" href="toptan-satis.html">Toptan Satış</a>
+<a class="text-[10px] font-medium uppercase tracking-widest text-stone-500 hover:text-[#b70049] transition-colors" href="#">İletişim</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
